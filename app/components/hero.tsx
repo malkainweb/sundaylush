@@ -54,7 +54,7 @@ const Hero = () => {
   return (
     <>
       <div className="w-full flex flex-col relative ">
-        <div className=" h-screen mb-80 sticky top-0 left-0 overflow-clip gap-10 w-full grid  grid-cols-5 px-10 ">
+        <div className=" h-screen  sticky top-0 left-0 overflow-clip gap-10 w-full grid  grid-cols-5 px-10 ">
           <div
             style={{
               opacity: secondStartAnime ? 1 : 0.5,
@@ -68,7 +68,7 @@ const Hero = () => {
               opacity: secondStartAnime ? 1 : 0.5,
               transition: "opacity 1.3s ease-in-out",
             }}
-            className="bg-linear-to-t  pointer-events-none  to-[#A8603A] absolute h-[75%] left-0 w-full top-0 z-100"
+            className="bg-linear-to-t   pointer-events-none  to-[#A8603A] absolute h-[75%] left-0 w-full top-0 z-100"
           ></div>
           {/* Add this new section right after the hero images grid and before the mission/vision section */}
 
@@ -153,7 +153,7 @@ const Hero = () => {
           ))}
         </div>
 
-        <section className="bg-white  md:w-full md:max-w-[98%] mx-auto min-h-[20vh] w-full z-100  rounded-t-[40px] px-8 md:px-16 pb-32 pt-24">
+        <section className="bg-white translate-y-80   md:w-full md:max-w-[98%] mx-auto min-h-[20vh] w-full z-100  rounded-t-[40px] px-8 md:px-16 pb-32 pt-24">
           <div className="max-w-7xl  mx-auto">
             {/* Header */}
             <div className="mb-20">
@@ -220,6 +220,7 @@ const Hero = () => {
           </div>
         </section>
       </div>
+      <div className="h-80"></div>
     </>
   );
 };
