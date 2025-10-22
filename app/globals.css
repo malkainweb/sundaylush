@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  width: 100%;
+}
+
+.border2 {
+  border: 1px solid red;
+}
