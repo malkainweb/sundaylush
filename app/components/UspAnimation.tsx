@@ -1,11 +1,11 @@
 "use client";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import MainUsp from "@/public/usp/mainusp.webp";
-import Usp1 from "@/public/usp/usp1.webp";
-import Usp2 from "@/public/usp/usp2.webp";
-import Usp3 from "@/public/usp/usp3.webp";
-import sticks from "@/public/usp/sticks.webp";
+import MainUsp from "@/public/browse/mainusp.webp";
+import Usp1 from "@/public/browse/usp1.webp";
+import Usp2 from "@/public/browse/usp2.webp";
+import Usp3 from "@/public/browse/usp3.webp";
+import sticks from "@/public/browse/sticks.webp";
 import Image from "next/image";
 import { playfairDisplay } from "../util/font";
 import { useDeviceType } from "../util/useDeviceType";
