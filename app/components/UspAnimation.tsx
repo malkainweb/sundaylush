@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import MainUsp from "@/public/usp/MainUsp.webp";
-import Usp1 from "@/public/usp/Usp1.webp";
+import Usp1 from "@/public/usp/usp1.webp";
 import Usp2 from "@/public/usp/usp2.webp";
 import Usp3 from "@/public/usp/usp3.webp";
 import sticks from "@/public/Usp/sticks.webp";
