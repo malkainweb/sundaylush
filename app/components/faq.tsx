@@ -6,29 +6,34 @@ import { BiPlus, BiMinus } from "react-icons/bi";
 
 const faqs = [
   {
-    question: "What makes Sunday Lush products different?",
+    question: "Do I need prior experience to enroll in your courses?",
     answer:
-      "Sunday Lush combines natural, clinically-proven ingredients with luxurious textures to deliver visible results. Our formulations are cruelty-free, sustainably sourced, and designed for all skin types. We believe in transparency—every ingredient serves a purpose, and we never use harsh chemicals or fillers.",
+      "Not at all! Our entry-level course is designed specifically for complete beginners with zero lash experience. We guide you step-by-step through every technique, from understanding lash anatomy to mastering your first full set. If you already have some experience, our advanced courses will help you refine your skills and learn specialized techniques.",
   },
   {
-    question: "Which products are right for my skin type?",
+    question: "What's included in the course fee?",
     answer:
-      "We've designed our collection to work harmoniously across all skin types. Whether you have dry, oily, combination, or sensitive skin, our products are formulated to balance and nourish. Book a free consultation with our skin experts to create a personalized routine tailored to your unique needs and concerns.",
+      "Your course fee includes comprehensive video lessons, a detailed course manual, lifetime access to materials, personalized instructor feedback, and a certification upon completion. For hands-on courses, we also provide a complete starter kit with all the tools and products you'll need to begin practicing immediately.",
   },
   {
-    question: "How long will it take to see results?",
+    question: "How long does it take to complete a course?",
     answer:
-      "Most customers notice improved hydration and radiance within the first week of use. For concerns like fine lines, texture, and hyperpigmentation, you can expect to see visible improvements within 4-6 weeks of consistent use. Remember, skincare is a journey—consistency is key to achieving your best skin.",
+      "Most of our courses range from 4-8 weeks depending on the level and your learning pace. We believe in quality over speed—you'll have the flexibility to learn at your own rhythm while still having structured guidance. Our support doesn't end after the course; you'll have ongoing access to our community and resources as you continue to grow.",
   },
   {
-    question: "Are Sunday Lush products safe for sensitive skin?",
+    question: "Will I be certified after completing the course?",
     answer:
-      "Absolutely! Our entire range is dermatologically tested and formulated without common irritants like parabens, sulfates, synthetic fragrances, and harsh alcohols. We focus on gentle yet effective ingredients that nurture even the most reactive skin. If you have specific concerns, we recommend patch testing or consulting with our team.",
+      "Yes! Upon successfully completing your course and passing the practical assessment, you'll receive an official Sunday Lush certification. This certification demonstrates your competency in lash application techniques and is recognized within the beauty industry. We'll also guide you on any additional licensing requirements in your area.",
   },
   {
-    question: "Do you offer a satisfaction guarantee?",
+    question: "What kind of support do you offer after certification?",
     answer:
-      "Yes! We're confident you'll love your Sunday Lush experience. If you're not completely satisfied within 30 days of purchase, we offer hassle-free returns and exchanges. Your skin's happiness is our priority, and we stand behind every product we create.",
+      "We believe education doesn't stop at certification. After completing your course, you'll gain access to our exclusive alumni community, ongoing mentorship opportunities, business-building resources, and regular technique refresher sessions. We're committed to supporting your entire lash journey—from student to successful lash artist.",
+  },
+  {
+    question: "Can I start a lash business after taking your courses?",
+    answer:
+      "Absolutely! Many of our students go on to build thriving lash businesses. Beyond teaching you technical skills, we provide guidance on setting up your business, pricing your services, marketing strategies, and building a loyal client base. We'll equip you with both the artistry and business knowledge needed to succeed in the lash industry.",
   },
 ];
 
