@@ -138,14 +138,14 @@ const UspAnimation = () => {
             return (
               <div
                 key={index}
-                className="  h-[50vh] overflow-clip rounded-3xl md:w-160 lg:w-[50%] w-full"
+                className=" min-h-[50vh] rounded-3xl md:w-160 lg:w-[50%] w-full overflow-hidden"
               >
                 <Image
                   src={e}
                   alt={`USP Image ${index + 1}`}
-                  className={` ${
-                    e == MainUsp ? "w-screen h-screen " : "w-full h-full"
-                  }  object-cover rounded-3xl `}
+                  className={`${
+                    e == MainUsp ? "w-screen h-screen" : "w-full h-full"
+                  } object-cover rounded-3xl`}
                 />
               </div>
             );

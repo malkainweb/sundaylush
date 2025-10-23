@@ -30,7 +30,7 @@ export default function Courses() {
           {/* Header */}
           <div className="text-center pt-39 mb-16">
             <h2
-              className={`${playfairDisplay.className} text-5xl md:text-6xl lg:text-7xl font-light text-[#422611] mb-8 tracking-[140%]`}
+              className={`${playfairDisplay.className} text-5xl md:text-6xl lg:text-7xl font-light text-[#422611] mb-8 tracking-wider`}
             >
               CLASSIC LASH <br /> CERTIFICATION COURSE
             </h2>

@@ -15,42 +15,22 @@ const Hero = () => {
   const [startAnime, setstartAnime] = useState(false);
   const [secondStartAnime, setsecondStartAnime] = useState(false);
 
-  const [loadingProgress, setLoadingProgress] = useState(0);
-
   useEffect(() => {
-    let loadedCount = 0;
-    const imagePromises = heroImages.map((img) => {
-      return new Promise((resolve) => {
-        const image = new window.Image();
-        image.src = img.src;
-        image.onload = () => {
-          loadedCount++;
-          setLoadingProgress((loadedCount / heroImages.length) * 100);
-          resolve(true);
-        };
-      });
-    });
+    // document.body.style.overflow = "hidden";
+    setstartAnime(true);
 
-    Promise.all(imagePromises).then(() => {
-      setTimeout(() => {
-        document.body.style.overflow = "hidden";
-        setstartAnime(true);
+    setTimeout(() => {
+      setsecondStartAnime(true);
+      // setTimeout(() => {
+      //   document.body.style.overflow = "auto";
+      // }, 1000);
+    }, 1200);
 
-        setTimeout(() => {
-          setsecondStartAnime(true);
-          setTimeout(() => {
-            document.body.style.overflow = "auto";
-          }, 1000);
-        }, 1200);
-      }, 300); // Small delay for smooth transition
-    });
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
+    // return () => {
+    //   document.body.style.overflow = "auto";
+    // };
   }, []);
 
-  if (loadingProgress < 100) return null;
   return (
     <>
       <div className="w-full flex flex-col relative ">
