@@ -52,54 +52,6 @@ const Hero = () => {
           ></div>
           {/* Add this new section right after the hero images grid and before the mission/vision section */}
 
-          <div className="w-full flex justify-center items-center absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10000 ">
-            <div className="flex flex-col items-center gap-5 max-w-4xl px-8">
-              {/* Header */}
-              <div className="overflow-hidden  ">
-                <h1
-                  className={`${
-                    playfairDisplay.className
-                  } text-5xl md:text-6xl capitalize lg:text-7xl font-light text-[#F2E8DE] text-center leading-[120%] transition-all duration-[1.3s] ${
-                    !secondStartAnime ? "translate-y-[200px]" : "translate-y-0"
-                  }`}
-                >
-                  This is Lash Education;
-                  <br />
-                  The Sunday Way
-                </h1>
-              </div>
-
-              {/* Caption */}
-              <div className="overflow-hidden  ">
-                <p
-                  className={`${
-                    playfairDisplay.className
-                  } text-base md:text-lg text-[#F2E8DE] text-center  font-light leading-[120%] w-100 transition-all duration-[1.3s] ${
-                    !secondStartAnime ? "-translate-y-[200px]" : "translate-y-0"
-                  }`}
-                >
-                  At Sunday Lash Co, we're raising the standard for lash
-                  education—by putting real support, clarity, and growth at the
-                  center of everything we do.
-                </p>
-              </div>
-
-              {/* Button */}
-
-              <div className=" overflow-hidden">
-                <button
-                  className={`${
-                    HelveticaNeue.className
-                  } px-12 py-4 bg-[#FF583B] cursor-pointer text-[white] text-base font-normal rounded-[14px] hover:bg-[#ff9c8b] transition-all duration-[1.3s] pointer-events-auto ${
-                    !secondStartAnime ? "-translate-y-[200px]" : "translate-y-0"
-                  }`}
-                >
-                  Get Started
-                </button>
-              </div>
-            </div>
-          </div>
-
           {heroImages.map((img, index) => (
             <div key={index} className="w-full overflow-x-clip flex relative">
               <Image
@@ -133,6 +85,54 @@ const Hero = () => {
           ))}
         </div>
 
+        <div className="w-full flex justify-center  items-center h-screen  mt-[-100vh]  mb-[-30vh]  z-10000 ">
+          <div className="flex  flex-col items-center gap-5 max-w-4xl px-8">
+            {/* Header */}
+            <div className="overflow-hidden  ">
+              <h1
+                className={`${
+                  playfairDisplay.className
+                } text-5xl md:text-6xl capitalize lg:text-7xl font-light text-[#F2E8DE] text-center leading-[120%] transition-all duration-[1.3s] ${
+                  !secondStartAnime ? "translate-y-[200px]" : "translate-y-0"
+                }`}
+              >
+                This is Lash Education;
+                <br />
+                The Sunday Way
+              </h1>
+            </div>
+
+            {/* Caption */}
+            <div className="overflow-hidden  ">
+              <p
+                className={`${
+                  playfairDisplay.className
+                } text-base md:text-lg text-[#F2E8DE] text-center  font-light leading-[120%] w-100 transition-all duration-[1.3s] ${
+                  !secondStartAnime ? "-translate-y-[200px]" : "translate-y-0"
+                }`}
+              >
+                At Sunday Lash Co, we're raising the standard for lash
+                education—by putting real support, clarity, and growth at the
+                center of everything we do.
+              </p>
+            </div>
+
+            {/* Button */}
+
+            <div className=" overflow-hidden">
+              <button
+                className={`${
+                  HelveticaNeue.className
+                } px-12 py-4 bg-[#FF583B] cursor-pointer text-[white] text-base font-normal rounded-[14px] hover:bg-[#ff9c8b] transition-all duration-[1.3s] pointer-events-auto ${
+                  !secondStartAnime ? "-translate-y-[200px]" : "translate-y-0"
+                }`}
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
         <section className="bg-white translate-y-80   md:w-full md:max-w-[98%] mx-auto min-h-[20vh] w-full z-100  rounded-t-[40px] px-8 md:px-16 pb-32 pt-24">
           <div className="max-w-7xl  mx-auto">
             {/* Header */}
@@ -157,7 +157,7 @@ const Hero = () => {
               </div>
 
               {/* Center - Divider */}
-              {/* <div className="hidden md:block border2 w-px bg-[#D1C4B8] self-stretch"></div> */}
+              {/* <div className="hidden md:block  w-px bg-[#D1C4B8] self-stretch"></div> */}
 
               {/* Right Side - Mission and Vision */}
               <div className="flex-1 flex  border-t border-l pl-10 relative rounded-tl-2xl pt-6 flex-col md:flex-row gap-12">

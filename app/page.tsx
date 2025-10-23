@@ -16,6 +16,7 @@ import sec4 from "@/public/hero/sec4.webp";
 import sec5 from "@/public/hero/sec5.webp";
 import flower from "@/public/hero/flower.svg";
 import BeautyProcess from "./components/Process";
+import StackedGallery from "./components/StackedGallery";
 const heroImages = [sec1, sec2, sec3, sec4, sec5];
 
 export default function Home() {
@@ -58,6 +59,7 @@ export default function Home() {
         <Courses />
         <UspAnimation />
         <BeautyProcess />
+        <StackedGallery />
         <FAQ />
         <Footer />
       </div>

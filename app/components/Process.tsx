@@ -81,15 +81,20 @@ export default function BeautyProcess() {
     [0, 1],
     ["10%", "-80%"] // Adjust this percentage based on your needs
   );
+  const width = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["10%", "100%"] // Adjust this percentage based on your needs
+  );
 
   return (
     <div
       ref={containerRef}
-      className=" overflow-clip mx-auto md:w-800 max-w-full h-[400vh] w-full"
+      className=" overflow-clip bg-linear-to-b to-[#F2EEE5] mx-auto md:w-800 max-w-full h-[400vh] w-full"
     >
       <div className="h-screen flex flex-col sticky top-0 left-0 w-full">
         {/* Top Section with Title and Progress Circle */}
-        <div className="h-[45%]  flex items-center justify-center">
+        <div className="h-[45%]   flex items-center justify-center">
           <div
             className={` text-[#2F1605] text-center ${playfairDisplay.className}`}
           >
@@ -144,10 +149,16 @@ export default function BeautyProcess() {
         </div>
 
         {/* Bottom Section with Scrolling Cards */}
-        <div className="mx-auto w-fit  overflow-hidden h-[55%]  px-4 py-12">
+        <div className="mx-auto w-full  relative overflow-hidden h-[55%]  px-4 ">
+          <motion.div className="h-[3px]  w-full bg-[#1A2F05]/33 absolute top-5 left-0 ">
+            <motion.div
+              style={{ width }}
+              className="h-full rounded-xs bg-[#1A2F05] "
+            />
+          </motion.div>
           <motion.div
             ref={cardsRef}
-            className="flex  w-fit gap-[16rem] flex-nowrap"
+            className="flex  h-full  w-fit gap-64 flex-nowrap"
             style={{
               x: xTransform,
             }}
@@ -155,9 +166,10 @@ export default function BeautyProcess() {
             {coursesData.map((course) => (
               <div
                 key={course.id}
-                className="  rounded-lg shrink-0  items-center gap-5 flex  overflow-hidden"
+                className="  rounded-lg relative   shrink-0  items-center gap-5 flex  "
               >
-                <div className="relative  rounded-[24px] w-[16rem] aspect-square overflow-hidden">
+                <div className="w-10 h-10 absolute border-black top-0 border-2 left-0 bg-white rounded-full"></div>
+                <div className="relative  rounded-3xl w-[16rem] aspect-square overflow-hidden">
                   <Image
                     src={course.image}
                     alt={course.title}
