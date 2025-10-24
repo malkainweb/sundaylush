@@ -96,11 +96,17 @@ export default function Footer() {
             </div>
 
             {/* Copyright */}
-            <p
-              className={`${HelveticaNeue.className} text-sm text-white/70 mt-12`}
-            >
-              Copyright sudaylush 2023. All rights reserved
-            </p>
+            <div className="flex gap-3 flex-col   mt-12 ">
+              <p className={`${HelveticaNeue.className} text-sm text-white/70`}>
+                Copyright sudaylush 2023. All rights reserved
+              </p>
+              <a
+                href="https://www.malkain.com"
+                className={`hover:text-white underline underline-offset-4 capitalize font-light text-sm text-white/70 ${HelveticaNeue.className}`}
+              >
+                Designed and developed by malkain
+              </a>
+            </div>
           </div>
 
           {/* Right Column - Schedule Meeting */}
