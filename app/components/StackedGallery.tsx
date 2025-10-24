@@ -103,7 +103,7 @@ export default function StackedGallery() {
   return (
     <section
       ref={containerRef}
-      className="relative w-full md:w-[200rem] max-w-full mx-auto bg-[#F2EEE5] h-[300vh]"
+      className="relative w-full md:w-800 max-w-full mx-auto bg-[#F2EEE5] h-[300vh]"
     >
       {/* Sticky Container */}
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
@@ -118,7 +118,7 @@ export default function StackedGallery() {
         <motion.div
           className="flex items-center gap-20 h-screen w-fit px-10"
           style={{
-            x: useTransform(scrollYProgress, [0.02, 1], ["25%", "-70%"]),
+            x: useTransform(scrollYProgress, [0, 1], ["25%", "-70%"]),
           }}
         >
           {galleryImages.map((image, index) => (
