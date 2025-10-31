@@ -138,10 +138,11 @@ const Hero = () => {
             {/* Header */}
             <div className="mb-20">
               <h2
-                className={`${playfairDisplay.className} text-4xl md:text-5xl font-extralight text-[#422611] leading-[110%] w-200 max-w-full `}
+                className={`${playfairDisplay.className} text-4xl md:text-5xl font-extralight text-[#422611] leading-[110%] w-230 max-w-full `}
               >
-                Born from a love for elegance and modern beauty, Sunday Lush
-                empowers women to master the art of lashes.
+                At Sunday Lash Company, we{"'"}re raising the standard for lash
+                education by putting real support, clarity, and excellence at
+                the center of everything we do.
               </h2>
             </div>
 
@@ -173,7 +174,7 @@ const Hero = () => {
                     To provide calm, confidence-building lash education that
                     empowers artists to grow with clarity, creativity and
                     integrity. We're on a mission to set a new pace to the lash
-                    industry—one where slow, steady learning is celebrated, and
+                    industry, one where slow, steady learning is celebrated, and
                     support doesn't end after certification
                   </p>
                 </div>
@@ -188,11 +189,9 @@ const Hero = () => {
                   <p
                     className={`${HelveticaNeue.className} text-base leading-[130%] text-[#422611] `}
                   >
-                    To redefine lash education by creating a calm, supportive
-                    space where future artists can build skill and confidence
-                    without pressure or gatekeeping.We envision an industry led
-                    by empowered lash professionals—where artistry is nurtured,
-                    not rushed, and growth is always guided with purpose.
+                    We envision an industry led by empowered lash professionals,
+                    where artistry is nurtured, not rushed, and growth is always
+                    guided with purpose.
                   </p>
                 </div>
               </div>

@@ -14,7 +14,7 @@ import img7 from "@/public/gallery/im7.webp";
 import img8 from "@/public/gallery/im8.webp";
 import { playfairDisplay } from "../util/font";
 
-const galleryImages = [img2, img3, img4, img5, img6, img1, img7, img8];
+const galleryImages = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 // Define different widths for variety
 const getWidthByIndex = (index: number) => {

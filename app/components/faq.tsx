@@ -11,19 +11,18 @@ const faqs = [
       "Not at all! Our entry-level course is designed specifically for complete beginners with zero lash experience. We guide you step-by-step through every technique, from understanding lash anatomy to mastering your first full set. If you already have some experience, our advanced courses will help you refine your skills and learn specialized techniques.",
   },
   {
-    question: "What's included in the course fee?",
+    question: "What's included in the course fee.?",
     answer:
-      "Your course fee includes comprehensive video lessons, a detailed course manual, lifetime access to materials, personalized instructor feedback, and a certification upon completion. For hands-on courses, we also provide a complete starter kit with all the tools and products you'll need to begin practicing immediately.",
+      "Your tuition covers everything you need to start your lash career with confidence.<br/><br/>1. Professional Lash Kit & Student Manual<br/>2. Hybrid Online/Student in-person training<br/>3. Mentorship and on-going support<br/>4. Official certification upon completion.",
   },
   {
     question: "How long does it take to complete a course?",
-    answer:
-      "Most of our courses range from 4-8 weeks depending on the level and your learning pace. We believe in quality over speed—you'll have the flexibility to learn at your own rhythm while still having structured guidance. Our support doesn't end after the course; you'll have ongoing access to our community and resources as you continue to grow.",
+    answer: "Our courses range from 2-3 days. We let you go at your own pace.",
   },
   {
     question: "Will I be certified after completing the course?",
     answer:
-      "Yes! Upon successfully completing your course and passing the practical assessment, you'll receive an official Sunday Lush certification. This certification demonstrates your competency in lash application techniques and is recognized within the beauty industry. We'll also guide you on any additional licensing requirements in your area.",
+      "Yes! Upon successfully completing your course and passing the practical assessment, you'll receive an official Sunday Lash certification. This certification demonstrates your competency in lash application techniques and is recognized within the beauty industry. We'll also guide you on any additional licensing requirements in your area.",
   },
   {
     question: "What kind of support do you offer after certification?",
@@ -90,18 +89,19 @@ export default function FAQ() {
 
               {/* Answer */}
               <div
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
                   openIndex === index
                     ? "max-h-96 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="px-6 pb-6 pt-2">
-                  <p
-                    className={`${HelveticaNeue.className} text-base text-[#4A4A4A] leading-relaxed`}
-                  >
-                    {faq.answer}
-                  </p>
+                  <div
+                    className={`${HelveticaNeue.className} text-base text-[#4A4A4A] leading-relaxed prose prose-ol:list-decimal prose-ol:ml-5 prose-ol:space-y-2`}
+                    dangerouslySetInnerHTML={{
+                      __html: faq.answer.replace(/(\d+\.\s)/g, "<br/>$1"),
+                    }}
+                  />
                 </div>
               </div>
             </div>

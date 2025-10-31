@@ -30,21 +30,21 @@ export const coursesData: CourseItem[] = [
     image: imgTwo,
     title: "Select your course",
     description:
-      "Click Enroll Now on the course you like most. Each course is carefully crafted to guide you step by step on exactly what to learn.",
+      "Click “Enroll Now” and choose the course best fitted for you.",
   },
   {
     id: 3,
     image: imgThree,
     title: "Make payment",
     description:
-      "Complete your secure payment and get instant access to your course materials.",
+      "Complete your secure payment and get scheduled for your course.",
   },
   {
     id: 4,
     image: imgFour,
     title: "Start Learning",
     description:
-      "Begin your lash journey with comprehensive video lessons and expert guidance.",
+      "Our customer care representative will get you scheduled for you live in- person course.",
   },
   {
     id: 5,
@@ -182,7 +182,7 @@ export default function BeautyProcess() {
                     {course.title}
                   </h3>
                   <p
-                    className={`text-[#2F1605]/50   w-[20rem]   font-light text-xl leading-[110%]`}
+                    className={`text-[#2F1605]/70   w-[20rem]   font-light text-xl leading-[110%]`}
                   >
                     {course.description}
                   </p>

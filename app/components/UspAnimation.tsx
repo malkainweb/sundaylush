@@ -101,6 +101,12 @@ const UspAnimation = () => {
             </div>
             {/* CTA Button */}
             <button
+              onClick={() => {
+                document.getElementById("courses")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }}
               className={`${playfairDisplay.className} w-full  py-3  bg-[#EEE7D7] text-[#2C2C2C] text-sm font-medium cursor-pointer rounded-[20px] hover:bg-[#DDD8CB] transition-all duration-200`}
             >
               Browse course{" "}
