@@ -10,33 +10,33 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative  w-full bg-[#6B6D5E] text-white overflow-hidden">
-      <Image
+    <footer className="relative  w-full bg-[#FF583B] text-white overflow-hidden">
+      {/* <Image
         src={footerBg}
         alt="Footer Background"
         className="absolute inset-0 w-full h-full object-cover  brightness-60 pointer-events-none"
-      />
+      /> */}
       {/* Background overlay effect */}
-      <div className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-br from-white/20 to-90% via-transparent to-transparent pointer-events-none" />
 
       {/* Decorative light beam effect */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/20 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="relative  w-full z-10 md:w-800 max-w-full mx-auto pt-10 pb-16">
         {/* Logo Section */}
-        <div className="text-center w-full  px-[3%] ">
+        <div className="text-center w-full  md:mb-0 mb-6 px-[8%] ">
           <Image
             src={footerlogo}
             alt="Footer Logo"
             className="mx-auto w-full  "
           />
         </div>
-        <div className="border-b border-white/50  mb-10 "></div>
+        <div className="border-b border-white/50  md:block hidden mb-10 "></div>
 
         {/* Content Grid */}
-        <div className="flex justify-between items-center px-[3.2%] pt-14  gap-16 w-full mx-auto">
+        <div className="flex  md:flex-row  flex-col justify-between items-center px-[3.2%] md:pt-14  gap-16 w-full mx-auto">
           {/* Left Column - Reach Out */}
-          <div className={`${playfairDisplay.className} `}>
+          <div className={`${playfairDisplay.className} order-2 md:order-1 `}>
             <h2 className="text-3xl md:text-4xl font-light mb-8 tracking-wide">
               REACH OUT TO US
             </h2>
@@ -69,11 +69,11 @@ export default function Footer() {
             {/* Contact Information */}
             <div className={`space-y-3`}>
               <a
-                href="mailto:Sundaylush@gmail.com"
+                href="mailto:sundaylashcompany@gmail.com"
                 className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
               >
                 <BsEnvelope className="w-5 h-5 shrink-0" />
-                <span className="text-base">Sundaylush@gmail.com</span>
+                <span className="text-base">sundaylashcompany@gmail.com</span>
               </a>
 
               <a
@@ -85,20 +85,24 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://maps.google.com/?q=24533+Newyork+avenue"
+                href="https://maps.google.com/?q=280+Route+35+South,+Suite+200,+Red+Bank,+NJ+07701"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
               >
                 <BsGeoAlt className="w-5 h-5 shrink-0" />
-                <span className="text-base">24533 Newyork avenue</span>
+                <span className="text-base">
+                  280 Route 35 South, Suite 200, Red Bank, NJ, 07701
+                </span>
               </a>
             </div>
 
             {/* Copyright */}
             <div className="flex gap-3 flex-col   mt-12 ">
-              <p className={`${HelveticaNeue.className} text-sm text-white/70`}>
-                Copyright sudaylush 2023. All rights reserved
+              <p
+                className={`${HelveticaNeue.className}  text-white w-[20rem] font-light max-w-full leading-[110%]`}
+              >
+                Copyright Sunday Lash Co. 2025. All rights reserved{" "}
               </p>
               <a
                 href="https://www.malkain.com"
@@ -110,16 +114,17 @@ export default function Footer() {
           </div>
 
           {/* Right Column - Schedule Meeting */}
+          {/* <div className=""> */}
           <div
-            className={`${playfairDisplay.className} bg-[white]/5 backdrop-blur-md rounded-[30px] p-7  md:w-110 max-w-[60%] text-[#FDFBEE]`}
+            className={`${playfairDisplay.className}  order-1 bg-[#FBB824]/50 backdrop-blur-md rounded-[30px] p-7 w-full  md:w-110 md:max-w-[60%] flex flex-col md:gap-6 gap-5 text-[#FDFBEE]`}
           >
-            <h2 className="text-3xl md:text-4xl font-light mb-6 tracking-wide">
+            <h2 className="text-3xl md:text-4xl font-light tracking-wide">
               SCHEDULE A<br />
               MEETING
             </h2>
 
             <p
-              className={`${HelveticaNeue.className} text-base leading-[130%] mb-8`}
+              className={`${HelveticaNeue.className} md:text-base text-sm leading-[130%] `}
             >
               Ready to take the next step? Whether you're curious about our
               courses, need guidance on which program is right for you, or want
@@ -133,6 +138,7 @@ export default function Footer() {
               Book an appointment
             </button>
           </div>
+          {/* </div> */}
         </div>
       </div>
     </footer>

@@ -62,7 +62,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-240 shadow-md left-[50%] translate-x-[-50%] max-w-[90%] mx-auto fixed transition-all duration-500 rounded-[18px] z-1000 bg-[#EEE7D7] p-1.5 ${
+      className={`w-240 shadow-md left-[50%] translate-x-[-50%] max-w-[90%] mx-auto fixed transition-all duration-500 rounded-[18px] z-[99999] bg-[#EEE7D7] p-1.5 ${
         isVisible ? "top-5" : "-top-24"
       }`}
     >

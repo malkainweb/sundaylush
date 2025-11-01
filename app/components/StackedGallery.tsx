@@ -9,9 +9,9 @@ import img2 from "@/public/gallery/img2.webp";
 import img3 from "@/public/gallery/img3.webp";
 import img4 from "@/public/gallery/img4.webp";
 import img5 from "@/public/gallery/img5.webp";
-import img6 from "@/public/gallery/im6.webp";
-import img7 from "@/public/gallery/im7.webp";
-import img8 from "@/public/gallery/im8.webp";
+import img6 from "@/public/gallery/img6.webp";
+import img7 from "@/public/gallery/img7.webp";
+import img8 from "@/public/gallery/img8.webp";
 import { playfairDisplay } from "../util/font";
 
 const galleryImages = [img1, img2, img3, img4, img5, img6, img7, img8];
