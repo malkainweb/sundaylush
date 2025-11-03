@@ -154,7 +154,7 @@ export default function BeautyProcess() {
                 </p>
               </motion.div>
 
-              <h2 className="text-3xl md:text-7xl md:mb-0 mb-15 md:font-serif">
+              <h2 className="text-3xl md:text-7xl md:my-0 mt-[-3] mb-15 md:font-serif">
                 Beauty process
               </h2>
             </div>
@@ -186,7 +186,7 @@ export default function BeautyProcess() {
             {coursesData.map((course) => (
               <div
                 key={course.id}
-                className="  rounded-lg relative    md:shrink-0  items-center gap-5 flex  "
+                className="  rounded-lg relative    md:shrink-0  items-center md:gap-5 gap-3 flex  "
               >
                 <div className="w-10 h-10 md:block hidden absolute border-black top-0 border-2 left-0 bg-white rounded-full"></div>
                 <div className="relative shrink-0 w-[35%] md:rounded-3xl md:w-[16rem] aspect-square overflow-hidden">
