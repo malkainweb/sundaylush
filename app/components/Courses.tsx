@@ -36,7 +36,7 @@ export default function Courses() {
       <section className="w-full  md:max-w-[98%] md:rounded-b-3xl mx-auto bg-[#F2E8DE] px-[3%] pb-20 md:px-14">
         <div className="md:w-500 w-full  max-w-full mx-auto">
           {/* Header */}
-          <div className="text-center w-full pt-39 mb-10 md:mb-16">
+          <div className="text-center w-full pt-20 md:pt-39 mb-10 md:mb-16">
             <h2
               className={`${playfairDisplay.className} text-4xl md:text-6xl lg:text-7xl font-medium md:font-light text-[#422611] md:mb-8 mb-5  -tracking-wide`}
             >
