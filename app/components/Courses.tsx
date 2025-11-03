@@ -32,7 +32,10 @@ const courses = [
 ];
 export default function Courses() {
   return (
-    <div id="courses" className="w-full bg-linear-to-b to-10%  to-white">
+    <div
+      id="courses"
+      className="w-full md:block hidden bg-linear-to-b to-10%  to-white"
+    >
       <section className="md:w-full md:max-w-[98%] rounded-b-3xl mx-auto bg-[#F2E8DE] pb-20 px-14">
         <div className="md:w-500 max-w-full mx-auto">
           {/* Header */}

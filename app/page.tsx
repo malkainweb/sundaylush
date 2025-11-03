@@ -17,6 +17,7 @@ import sec5 from "@/public/hero/sec5.webp";
 import flower from "@/public/hero/flower.svg";
 import BeautyProcess from "./components/Process";
 import StackedGallery from "./components/StackedGallery";
+import MobCourses from "./components/MobCourses";
 const heroImages = [sec1, sec2, sec3, sec4, sec5];
 
 export default function Home() {
@@ -54,14 +55,15 @@ export default function Home() {
 
       {/* Content */}
       <div className="relative z-10">
-        <Navbar />
+        {/* <Navbar />
         <Hero />
-        <Courses />
+        <Courses /> */}
+        <MobCourses />
         <UspAnimation />
-        <BeautyProcess />
+        {/* <BeautyProcess />
         <StackedGallery />
         <FAQ />
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
   );
