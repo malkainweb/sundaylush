@@ -36,15 +36,15 @@ export default function Courses() {
       <section className="w-full  md:max-w-[98%] md:rounded-b-3xl mx-auto bg-[#F2E8DE] px-[3%] pb-20 md:px-14">
         <div className="md:w-500 w-full  max-w-full mx-auto">
           {/* Header */}
-          <div className="text-center w-full pt-39 mb-16">
+          <div className="text-center w-full pt-39 mb-10 md:mb-16">
             <h2
-              className={`${playfairDisplay.className} text-5xl md:text-6xl lg:text-7xl font-light text-[#422611] mb-8  -tracking-wide`}
+              className={`${playfairDisplay.className} text-4xl md:text-6xl lg:text-7xl font-medium md:font-light text-[#422611] md:mb-8 mb-5  -tracking-wide`}
             >
-              Lash Certification Courses
+              Lash Certification <br className="md:hidden" /> Courses
             </h2>
 
             <p
-              className={`${HelveticaNeue.className} font-medium text-sm md:text-base text-[#422611] leading-[120%]  max-w-full w-90 mx-auto`}
+              className={`${HelveticaNeue.className} md:font-medium  font-light text-base text-[#422611] leading-[120%]  w-60 max-w-full md:w-90 mx-auto`}
             >
               Our step-by-step lessons make lash mastery simple, fun, and
               achievable.
@@ -62,7 +62,7 @@ export default function Courses() {
                 <div className="">
                   <div className="  mb-5 border-b border-b-black/10">
                     <h4
-                      className={`${playfairDisplay.className} text-2xl md:text-3xl font-extralight text-[#000000] mb-5`}
+                      className={`${playfairDisplay.className} text-2xl leading-[100%] md:text-3xl md:font-extralight font-light text-[#000000] mb-5`}
                     >
                       {course.title[0]}
                       <br />
