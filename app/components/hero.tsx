@@ -136,7 +136,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <section className="md:bg-white bg-linear-to-b from-white via-white translate-y-80   md:w-full md:max-w-[98%] mx-auto min-h-[20vh] w-full z-100  rounded-t-[40px]  md:px-16 pb-32 pt-24">
+        <section className="bg-white translate-y-80   md:w-full md:max-w-[98%] mx-auto min-h-[20vh] w-full z-100  rounded-t-[40px]  md:px-16 md:pb-32 pb-20 pt-16 md:pt-24">
           <div className="max-w-7xl   mx-auto">
             {/* Header */}
             <div className="md:mb-20 md:border-none border-b border-b-black/30 pb-10 md:pb-0 mb-5 ">
