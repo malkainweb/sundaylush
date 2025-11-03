@@ -32,14 +32,11 @@ const courses = [
 ];
 export default function Courses() {
   return (
-    <div
-      id="courses"
-      className="w-full md:block hidden bg-linear-to-b to-10%  to-white"
-    >
-      <section className="md:w-full md:max-w-[98%] rounded-b-3xl mx-auto bg-[#F2E8DE] pb-20 px-14">
-        <div className="md:w-500 max-w-full mx-auto">
+    <div id="courses" className="w-full  bg-linear-to-b to-10%  to-white">
+      <section className="w-full  md:max-w-[98%] md:rounded-b-3xl mx-auto bg-[#F2E8DE] px-[3%] pb-20 md:px-14">
+        <div className="md:w-500 w-full  max-w-full mx-auto">
           {/* Header */}
-          <div className="text-center pt-39 mb-16">
+          <div className="text-center w-full pt-39 mb-16">
             <h2
               className={`${playfairDisplay.className} text-5xl md:text-6xl lg:text-7xl font-light text-[#422611] mb-8  -tracking-wide`}
             >
@@ -47,7 +44,7 @@ export default function Courses() {
             </h2>
 
             <p
-              className={`${HelveticaNeue.className} font-medium text-sm md:text-base text-[#422611] leading-[120%] w-90 mx-auto`}
+              className={`${HelveticaNeue.className} font-medium text-sm md:text-base text-[#422611] leading-[120%]  max-w-full w-90 mx-auto`}
             >
               Our step-by-step lessons make lash mastery simple, fun, and
               achievable.
@@ -55,11 +52,11 @@ export default function Courses() {
           </div>
 
           {/* Course Cards Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto">
+          <div className="grid md:grid-cols-2  w-full lg:grid-cols-3 gap-4 mx-auto">
             {courses.map((course, index) => (
               <div
                 key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-[30px] drop-shadow-2xl px-8 pt-10 pb-5 flex flex-col justify-between  gap-5 min-h-[400px] hover:bg-white/90 transition-all duration-300"
+                className="bg-white/80 backdrop-blur-sm md:rounded-[30px] rounded-2xl md:drop-shadow-2xl md:px-8 px-4 pt-7 md:pt-10 pb-5 flex flex-col justify-between   gap-5 min-h-[400px] hover:bg-white/90 transition-all duration-300"
               >
                 {/* Card Content */}
                 <div className="">
@@ -72,7 +69,7 @@ export default function Courses() {
                       {course.title[1]}
                     </h4>
                   </div>{" "}
-                  <div className="w-full   rounded-[10px] overflow-hidden aspect-[1/0.6]">
+                  <div className="w-full shadow-md  rounded-2xl md:rounded-[10px] overflow-hidden aspect-[1/0.6]">
                     <Image
                       src={course.image}
                       alt={course.title.join(" ")}
@@ -96,7 +93,7 @@ export default function Courses() {
 
                   {/* CTA Button */}
                   <button
-                    className={`${playfairDisplay.className} w-[92%] mx-auto py-3 mt-4 bg-[#EEE7D7] text-[#2C2C2C] text-sm font-normal cursor-pointer rounded-[20px] hover:bg-[#DDD8CB] transition-all duration-200`}
+                    className={`${playfairDisplay.className} md:w-[92%] w-[96%] mx-auto py-3.5 md:py-3 mt-4 bg-[#EEE7D7] text-[#2C2C2C] text-sm font-normal cursor-pointer rounded-[15px] md:rounded-[20px] hover:bg-[#DDD8CB] transition-all duration-200`}
                   >
                     Enroll
                   </button>
