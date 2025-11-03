@@ -5,11 +5,11 @@ import { HelveticaNeue, playfairDisplay } from "../util/font";
 import { BiPlus, BiMinus } from "react-icons/bi";
 
 const faqs = [
-  // {
-  //   question: "Do I need prior experience to enroll in your courses?",
-  //   answer:
-  //     "Not at all! Our entry-level course is designed specifically for complete beginners with zero lash experience. We guide you step-by-step through every technique, from understanding lash anatomy to mastering your first full set. If you already have some experience, our advanced courses will help you refine your skills and learn specialized techniques.",
-  // },
+  {
+    question: "Do I need prior experience to enroll in your courses?",
+    answer:
+      "Not at all! Our entry-level course is designed specifically for complete beginners with zero lash experience. We guide you step-by-step through every technique, from understanding lash anatomy to mastering your first full set. If you already have some experience, our advanced courses will help you refine your skills and learn specialized techniques.",
+  },
   {
     question: "What's included in the course fee.?",
     answer:
@@ -24,16 +24,16 @@ const faqs = [
     answer:
       "Yes! Upon successfully completing your course and passing the practical assessment, you'll receive an official Sunday Lash certification. This certification demonstrates your competency in lash application techniques and is recognized within the beauty industry. We'll also guide you on any additional licensing requirements in your area.",
   },
-  // {
-  //   question: "What kind of support do you offer after certification?",
-  //   answer:
-  //     "We believe education doesn't stop at certification. After completing your course, you'll gain access to our exclusive alumni community, ongoing mentorship opportunities, business-building resources, and regular technique refresher sessions. We're committed to supporting your entire lash journey—from student to successful lash artist.",
-  // },
-  // {
-  //   question: "Can I start a lash business after taking your courses?",
-  //   answer:
-  //     "Absolutely! Many of our students go on to build thriving lash businesses. Beyond teaching you technical skills, we provide guidance on setting up your business, pricing your services, marketing strategies, and building a loyal client base. We'll equip you with both the artistry and business knowledge needed to succeed in the lash industry.",
-  // },
+  {
+    question: "What kind of support do you offer after certification?",
+    answer:
+      "We believe education doesn't stop at certification. After completing your course, you'll gain access to our exclusive alumni community, ongoing mentorship opportunities, business-building resources, and regular technique refresher sessions. We're committed to supporting your entire lash journey—from student to successful lash artist.",
+  },
+  {
+    question: "Can I start a lash business after taking your courses?",
+    answer:
+      "Absolutely! Many of our students go on to build thriving lash businesses. Beyond teaching you technical skills, we provide guidance on setting up your business, pricing your services, marketing strategies, and building a loyal client base. We'll equip you with both the artistry and business knowledge needed to succeed in the lash industry.",
+  },
 ];
 
 export default function FAQ() {

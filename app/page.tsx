@@ -61,9 +61,9 @@ export default function Home() {
         <MobCourses />
         <UspAnimation />
         {/* <BeautyProcess />
-        <StackedGallery />
+        <StackedGallery /> */}
         <FAQ />
-        <Footer /> */}
+        {/*   <Footer /> */}
       </div>
     </div>
   );
