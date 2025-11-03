@@ -22,7 +22,7 @@ export default function Footer() {
       {/* Decorative light beam effect */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/20 blur-[100px] rounded-full pointer-events-none" />
 
-      <div className="relative  w-full z-10 md:w-800 max-w-full mx-auto pt-10 pb-16">
+      <div className="relative   w-full z-10 md:w-800 max-w-full mx-auto pt-10 pb-10 md:pb-16">
         {/* Logo Section */}
         <div className="text-center w-full  md:mb-0 mb-6 px-[8%] ">
           <Image
@@ -34,15 +34,15 @@ export default function Footer() {
         <div className="border-b border-white/50  md:block hidden mb-10 "></div>
 
         {/* Content Grid */}
-        <div className="flex  md:flex-row  flex-col justify-between items-center px-[3.2%] md:pt-14  gap-16 w-full mx-auto">
+        <div className="flex  md:flex-row  flex-col justify-between items-center md:px-[3.2%] md:pt-14  gap-8  md:gap-16 w-full mx-auto">
           {/* Left Column - Reach Out */}
-          <div className={`${playfairDisplay.className} order-2 md:order-1 `}>
-            <h2 className="text-3xl md:text-4xl font-light mb-8 tracking-wide">
+          <div className={`${playfairDisplay.className}  order-2 md:order-1 `}>
+            <h2 className="text-2xl md:text-4xl font-light md:mb-8 mb-6 tracking-wide">
               REACH OUT TO US
             </h2>
 
             {/* Social Icons */}
-            <div className="flex gap-4 mb-8">
+            <div className="flex gap-4  mb-8">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center hover:bg-white/10 text-[#FDFBEE] transition-colors"
@@ -67,13 +67,15 @@ export default function Footer() {
             </div>
 
             {/* Contact Information */}
-            <div className={`space-y-3`}>
+            <div
+              className={`space-y-3  md:text-base text-sm md:w-full w-[80%]`}
+            >
               <a
                 href="mailto:sundaylashcompany@gmail.com"
                 className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
               >
                 <BsEnvelope className="w-5 h-5 shrink-0" />
-                <span className="text-base">sundaylashcompany@gmail.com</span>
+                <span className="">sundaylashcompany@gmail.com</span>
               </a>
 
               <a
@@ -81,7 +83,7 @@ export default function Footer() {
                 className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
               >
                 <BsTelephone className="w-5 h-5 shrink-0" />
-                <span className="text-base">(222) 567 7236</span>
+                <span className="">(222) 567 7236</span>
               </a>
 
               <a
@@ -91,16 +93,16 @@ export default function Footer() {
                 className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
               >
                 <BsGeoAlt className="w-5 h-5 shrink-0" />
-                <span className="text-base">
+                <span className="">
                   280 Route 35 South, Suite 200, Red Bank, NJ, 07701
                 </span>
               </a>
             </div>
 
             {/* Copyright */}
-            <div className="flex gap-3 flex-col   mt-12 ">
+            <div className="flex gap-3 flex-col   mt-7 md:mt-12 ">
               <p
-                className={`${HelveticaNeue.className}  text-white w-[20rem] font-light max-w-full leading-[110%]`}
+                className={`${HelveticaNeue.className}  md:text-white text-white/50 w-[20rem] font-light max-w-full leading-[110%]`}
               >
                 Copyright Sunday Lash Co. 2025. All rights reserved{" "}
               </p>
@@ -114,31 +116,31 @@ export default function Footer() {
           </div>
 
           {/* Right Column - Schedule Meeting */}
-          {/* <div className=""> */}
-          <div
-            className={`${playfairDisplay.className}  order-1 bg-[#FBB824]/50 backdrop-blur-md rounded-[30px] p-7 w-full  md:w-110 md:max-w-[60%] flex flex-col md:gap-6 gap-5 text-[#FDFBEE]`}
-          >
-            <h2 className="text-3xl md:text-4xl font-light tracking-wide">
-              SCHEDULE A<br />
-              MEETING
-            </h2>
-
-            <p
-              className={`${HelveticaNeue.className} md:text-base text-sm leading-[130%] `}
+          <div className="w-full   order-1 px-[3.2%] md:w-110 md:max-w-[60%] border-b-white/30 border-b md:border-none md:pb-0 pb-8">
+            <div
+              className={`${playfairDisplay.className} bg-[#FBB824]/50 backdrop-blur-md md:rounded-[30px] rounded-[23px] md:p-7 p-6  flex flex-col md:gap-6 gap-5 text-[#FDFBEE]`}
             >
-              Ready to take the next step? Whether you're curious about our
-              courses, need guidance on which program is right for you, or want
-              to explore how our skills can fit into your beauty journey—we're
-              here to help.
-            </p>
+              <h2 className="text-3xl md:text-4xl font-light tracking-wide">
+                SCHEDULE A<br />
+                MEETING
+              </h2>
 
-            <button
-              className={`${playfairDisplay.className} w-full  px-12 py-4 bg-[#FFF7E7]  text-[#502004] rounded-full text-base font-medium hover:bg-white transition-all hover:shadow-lg`}
-            >
-              Book an appointment
-            </button>
+              <p
+                className={`${HelveticaNeue.className} md:text-base text-sm leading-[130%] `}
+              >
+                Ready to take the next step? Whether you're curious about our
+                courses, need guidance on which program is right for you, or
+                want to explore how our skills can fit into your beauty
+                journey—we're here to help.
+              </p>
+
+              <button
+                className={`${playfairDisplay.className} w-full  px-12 py-4 bg-[#FFF7E7]  text-[#502004] rounded-full text-base font-medium hover:bg-white transition-all hover:shadow-lg`}
+              >
+                Book an appointment
+              </button>
+            </div>
           </div>
-          {/* </div> */}
         </div>
       </div>
     </footer>
