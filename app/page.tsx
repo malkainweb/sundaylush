@@ -57,7 +57,7 @@ export default function Home() {
       <div className="relative z-10">
         {/* <Navbar />
         <Hero />*/}
-        <Courses />
+        {/* <Courses /> */}
         {/* <MobCourses /> */}
         {/* <UspAnimation /> */}
         <BeautyProcess />

@@ -103,7 +103,7 @@ export default function BeautyProcess() {
   return (
     <div
       ref={containerRef}
-      className=" overflow-clip bg-linear-to-b to-[#F2EEE5] mx-auto md:w-800 max-w-full md:h-[400vh] w-full"
+      className=" overflow-clip bg-linear-to-b md:py-0 pt-15 pb-20 to-[#F2EEE5] mx-auto md:w-800 max-w-full md:h-[400vh] w-full"
     >
       <div className="md:h-screen flex flex-col md:sticky top-0 left-0 w-full">
         {/* Top Section with Title and Progress Circle */}
@@ -111,10 +111,10 @@ export default function BeautyProcess() {
           <div
             className={` text-[#2F1605] text-center ${playfairDisplay.className}`}
           >
-            <h2 className="text-5xl md:text-7xl mb-2">Our simplified</h2>
-            <div className="flex items-center  justify-center gap-6">
+            <h2 className="text-3xl md:text-7xl md:mb-2">Our simplified</h2>
+            <div className="flex items-center   justify-center gap-6">
               {/* Animated Circle with Number */}
-              <motion.div className="relative w-20 h-20  p-1 flex items-center justify-center">
+              <motion.div className="relative w-20 h-20 md:flex hidden  p-1  items-center justify-center">
                 {/* Background Circle */}
                 <svg className="absolute inset-0  w-full h-full -rotate-90">
                   <circle
@@ -154,7 +154,7 @@ export default function BeautyProcess() {
                 </p>
               </motion.div>
 
-              <h2 className="text-5xl md:text-7xl font-serif">
+              <h2 className="text-3xl md:text-7xl md:mb-0 mb-15 md:font-serif">
                 Beauty process
               </h2>
             </div>
@@ -163,15 +163,22 @@ export default function BeautyProcess() {
 
         {/* Bottom Section with Scrolling Cards */}
         <div className="mx-auto w-full  relative overflow-hidden md:h-[55%]  px-4 ">
-          <motion.div className="h-[3px]  w-full bg-[#1A2F05]/33 absolute top-5 left-0 ">
+          <motion.div className="md:h-[3px] left-4 w-px  h-full md:w-full bg-[#1A2F05]/33 absolute md:top-5 md:left-0 ">
             <motion.div
-              style={{ width }}
-              className="h-full rounded-xs bg-[#1A2F05] "
-            />
+              style={{
+                width: isMobile ? "100%" : width,
+                height: !isMobile ? "100%" : width,
+                transition: "0.3s ease-out",
+              }}
+              className="h-full relative rounded-xs bg-[#1A2F05] "
+            >
+              <div className="w-4 h-4 md:hidden  absolute border-black top-0 border -left-2 bg-white rounded-full"></div>
+              <div className="w-4 h-4 md:hidden  absolute border-black bottom-0 border -left-2 bg-white rounded-full"></div>
+            </motion.div>
           </motion.div>
           <motion.div
             ref={cardsRef}
-            className="flex  h-full md:flex-row flex-col  w-fit gap-64 flex-nowrap"
+            className="flex md:pl-0 pl-4 h-full md:flex-row flex-col  w-fit gap-23 md:gap-64 flex-nowrap"
             style={{
               x: isMobile ? 0 : xTransform, // Apply transform only on desktop
             }}
@@ -179,10 +186,10 @@ export default function BeautyProcess() {
             {coursesData.map((course) => (
               <div
                 key={course.id}
-                className="  rounded-lg relative border2  md:shrink-0  items-center gap-5 flex  "
+                className="  rounded-lg relative    md:shrink-0  items-center gap-5 flex  "
               >
-                <div className="w-10 h-10 absolute border-black top-0 border-2 left-0 bg-white rounded-full"></div>
-                <div className="relative  border2  shrink-0 w-[30%] md:rounded-3xl md:w-[16rem] aspect-square overflow-hidden">
+                <div className="w-10 h-10 md:block hidden absolute border-black top-0 border-2 left-0 bg-white rounded-full"></div>
+                <div className="relative shrink-0 w-[35%] md:rounded-3xl md:w-[16rem] aspect-square overflow-hidden">
                   <Image
                     src={course.image}
                     alt={course.title}
@@ -190,12 +197,12 @@ export default function BeautyProcess() {
                     className="object-cover"
                   />
                 </div>
-                <div className={` w-full  ${HelveticaNeue.className}`}>
-                  <h3 className="md:text-5xl md:whitespace-nowrap leading-[105%] capitalize text-[#2F1605] font-normal mb-3">
+                <div className={`  ${HelveticaNeue.className}`}>
+                  <h3 className="md:text-5xl text-2xl md:whitespace-nowrap leading-[105%] capitalize text-[#2F1605] font-normal mb-2 md:mb-3">
                     {course.title}
                   </h3>
                   <p
-                    className={`text-[#2F1605]/70   w-[20rem]   font-light text-xl leading-[110%]`}
+                    className={`text-[#2F1605]/70  text-sm  md:w-[20rem]  max-w-full  font-light md:text-xl leading-[110%]`}
                   >
                     {course.description}
                   </p>
