@@ -6,7 +6,7 @@ import imgThree from "@/public/courses/img_three.webp";
 import imgFour from "@/public/courses/img_four.webp";
 import imgFive from "@/public/courses/img_five.webp";
 import { StaticImageData } from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { HelveticaNeue, playfairDisplay } from "../util/font";
 
@@ -64,6 +64,19 @@ export default function BeautyProcess() {
     offset: ["start start", "end end"],
   });
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect if mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768); // 768px is md breakpoint
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   // Calculate current step based on scroll progress
   const currentStep = useTransform(
     scrollYProgress,
@@ -90,11 +103,11 @@ export default function BeautyProcess() {
   return (
     <div
       ref={containerRef}
-      className=" overflow-clip bg-linear-to-b to-[#F2EEE5] mx-auto md:w-800 max-w-full h-[400vh] w-full"
+      className=" overflow-clip bg-linear-to-b to-[#F2EEE5] mx-auto md:w-800 max-w-full md:h-[400vh] w-full"
     >
-      <div className="h-screen flex flex-col sticky top-0 left-0 w-full">
+      <div className="md:h-screen flex flex-col md:sticky top-0 left-0 w-full">
         {/* Top Section with Title and Progress Circle */}
-        <div className="h-[45%]   flex items-center justify-center">
+        <div className="md:h-[45%]   flex items-center justify-center">
           <div
             className={` text-[#2F1605] text-center ${playfairDisplay.className}`}
           >
@@ -149,7 +162,7 @@ export default function BeautyProcess() {
         </div>
 
         {/* Bottom Section with Scrolling Cards */}
-        <div className="mx-auto w-full  relative overflow-hidden h-[55%]  px-4 ">
+        <div className="mx-auto w-full  relative overflow-hidden md:h-[55%]  px-4 ">
           <motion.div className="h-[3px]  w-full bg-[#1A2F05]/33 absolute top-5 left-0 ">
             <motion.div
               style={{ width }}
@@ -158,18 +171,18 @@ export default function BeautyProcess() {
           </motion.div>
           <motion.div
             ref={cardsRef}
-            className="flex  h-full  w-fit gap-64 flex-nowrap"
+            className="flex  h-full md:flex-row flex-col  w-fit gap-64 flex-nowrap"
             style={{
-              x: xTransform,
+              x: isMobile ? 0 : xTransform, // Apply transform only on desktop
             }}
           >
             {coursesData.map((course) => (
               <div
                 key={course.id}
-                className="  rounded-lg relative   shrink-0  items-center gap-5 flex  "
+                className="  rounded-lg relative border2  md:shrink-0  items-center gap-5 flex  "
               >
                 <div className="w-10 h-10 absolute border-black top-0 border-2 left-0 bg-white rounded-full"></div>
-                <div className="relative  rounded-3xl w-[16rem] aspect-square overflow-hidden">
+                <div className="relative  border2  shrink-0 w-[30%] md:rounded-3xl md:w-[16rem] aspect-square overflow-hidden">
                   <Image
                     src={course.image}
                     alt={course.title}
@@ -177,8 +190,8 @@ export default function BeautyProcess() {
                     className="object-cover"
                   />
                 </div>
-                <div className={`  ${HelveticaNeue.className}`}>
-                  <h3 className="text-5xl whitespace-nowrap leading-[105%] capitalize text-[#2F1605] font-normal mb-3">
+                <div className={` w-full  ${HelveticaNeue.className}`}>
+                  <h3 className="md:text-5xl md:whitespace-nowrap leading-[105%] capitalize text-[#2F1605] font-normal mb-3">
                     {course.title}
                   </h3>
                   <p

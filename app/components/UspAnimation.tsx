@@ -71,7 +71,7 @@ const UspAnimation = () => {
   );
 
   return (
-    <div ref={containerRef} className=" bg-white  w-full h-[360vh]">
+    <div ref={containerRef} className=" bg-white   w-full h-[360vh]">
       <div className=" w-full overflow-clip sticky top-0 left-0 ">
         <motion.div
           style={{ bottom }}

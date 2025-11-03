@@ -59,9 +59,9 @@ export default function Home() {
         <Hero />*/}
         <Courses />
         {/* <MobCourses /> */}
-        <UspAnimation />
-        {/* <BeautyProcess />
-        <StackedGallery /> */}
+        {/* <UspAnimation /> */}
+        <BeautyProcess />
+        {/*    <StackedGallery /> */}
         <FAQ />
         {/*   <Footer /> */}
       </div>
