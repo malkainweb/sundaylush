@@ -97,7 +97,7 @@ const MobCourses = () => {
           index + 1 - yvalue >= 0 && index + 1 - yvalue <= 1
             ? `translateY(${
                 (index + 2 - yvalue) * 100 -
-                (calwidth < 765 ? 135 : 150) * (-index + yvalue)
+                (calwidth < 765 ? 140 : 150) * (-index + yvalue)
               }%) translateX(-50%)`
             : index + 1 - yvalue <= 0
             ? `translateY(${
@@ -117,68 +117,84 @@ const MobCourses = () => {
   const [uspModalOpen, setUspModalOpen] = useState(false);
 
   return (
-    <section
-      className="w-full md:hidden mt-[-10vh] mx-auto flex items-end md:w-800 md:max-w-full md:mt-22 relative"
-      style={{ height: `${items.length * (calwidth < 765 ? 100 : 90)}vh` }}
-      ref={sectionRef}
-      aria-label="Product benefits showcase"
-    >
-      <div className="flex justify-center items-center sticky bottom-0 h-screen w-full">
-        {items.map((course: any, index: any) => {
-          return (
-            <article
-              key={index}
-              // style={{ backgroundColor: index == 1 ? "#F94141" : "#FFE7A2" }}
-              ref={(el: any) => (itemRefs.current[index] = el)}
-              className={` absolute top-[50%]  shadow-md translate-x-[-50%] justify-center md:max-h-[95vh] w-[95%] h-[85vh] left-[50%] flex-col-reverse  gap-6 flex rounded-[30px] overflow-clip `}
-            >
-              <div className="bg-white/90 h-full backdrop-blur-xl rounded-[30px] drop-shadow-2xl px-5 pt-10 pb-5 flex flex-col justify-between  gap-5 min-h-[400px] hover:bg-white/90 transition-all duration-300">
-                {/* Card Content */}
-                <div className="">
-                  <div className="  border-b border-b-black/10">
-                    <h4
-                      className={`${playfairDisplay.className} text-3xl font-extralight text-[#000000] leading-[100%] mb-5`}
-                    >
-                      {course.title[0]}
-                      <br />
-                      {course.title[1]}
-                    </h4>
-                  </div>{" "}
-                </div>
-                <div className="w-full  flex-1   rounded-[20px] overflow-hidden ">
-                  <Image
-                    src={course.image}
-                    alt={course.title.join(" ")}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+    <>
+      <div className="text-center pt-39">
+        <h2
+          className={`${playfairDisplay.className} text-4xl  font-medium text-[#422611] mb-6  -tracking-wide`}
+        >
+          Lash Certification Courses
+        </h2>
 
-                <div className="flex flex-col">
-                  <p
-                    className={`${playfairDisplay.className} bg-[#E9F1E2] w-fit p-2 rounded-full text-sm font-light text-[#1A2F05] mb-3`}
-                  >
-                    Course duration:{" "}
-                    <span className="font-normal">{course.duration}</span>
-                  </p>
-                  <p
-                    className={`${HelveticaNeue.className} text-[#422611] text-base leading-[110%]`}
-                  >
-                    {course.description}
-                  </p>
-
-                  {/* CTA Button */}
-                  <button
-                    className={`${playfairDisplay.className} w-[92%] mx-auto py-3 mt-4 bg-[#EEE7D7] text-[#2C2C2C] text-sm font-normal cursor-pointer rounded-[20px] hover:bg-[#DDD8CB] transition-all duration-200`}
-                  >
-                    Enroll
-                  </button>
-                </div>
-              </div>
-            </article>
-          );
-        })}
+        <p
+          className={`${HelveticaNeue.className} font-light text-lg text-[#422611] leading-[110%] w-60 mx-auto`}
+        >
+          Our step-by-step lessons make lash mastery simple, fun, and
+          achievable.
+        </p>
       </div>
-    </section>
+      <section
+        className="w-full md:hidden mt-[-10vh] mx-auto flex items-end md:w-800 md:max-w-full md:mt-22 relative"
+        style={{ height: `${items.length * (calwidth < 765 ? 100 : 90)}vh` }}
+        ref={sectionRef}
+        aria-label="Product benefits showcase"
+      >
+        <div className="flex justify-center items-center sticky bottom-0 h-screen w-full">
+          {items.map((course: any, index: any) => {
+            return (
+              <article
+                key={index}
+                // style={{ backgroundColor: index == 1 ? "#F94141" : "#FFE7A2" }}
+                ref={(el: any) => (itemRefs.current[index] = el)}
+                className={` absolute top-[50%]  shadow-md translate-x-[-50%] justify-center md:max-h-[95vh] w-[95%] h-[85vh] left-[50%] flex-col-reverse  gap-6 flex rounded-[30px] overflow-clip `}
+              >
+                <div className="bg-white/90 h-full backdrop-blur-xl rounded-[30px] drop-shadow-2xl px-5 pt-10 pb-5 flex flex-col justify-between  gap-5 min-h-[400px] hover:bg-white/90 transition-all duration-300">
+                  {/* Card Content */}
+                  <div className="">
+                    <div className="  border-b border-b-black/10">
+                      <h4
+                        className={`${playfairDisplay.className} text-3xl font-extralight text-[#000000] leading-[100%] mb-5`}
+                      >
+                        {course.title[0]}
+                        <br />
+                        {course.title[1]}
+                      </h4>
+                    </div>{" "}
+                  </div>
+                  <div className="w-full  flex-1   rounded-[20px] overflow-hidden ">
+                    <Image
+                      src={course.image}
+                      alt={course.title.join(" ")}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+
+                  <div className="flex flex-col">
+                    <p
+                      className={`${playfairDisplay.className} bg-[#E9F1E2] w-fit p-2 rounded-full text-sm font-light text-[#1A2F05] mb-3`}
+                    >
+                      Course duration:{" "}
+                      <span className="font-normal">{course.duration}</span>
+                    </p>
+                    <p
+                      className={`${HelveticaNeue.className} text-[#422611] text-base leading-[110%]`}
+                    >
+                      {course.description}
+                    </p>
+
+                    {/* CTA Button */}
+                    <button
+                      className={`${playfairDisplay.className} w-[95%] mx-auto py-3.5 mt-4 bg-[#EEE7D7] text-[#2C2C2C] text-base font-normal cursor-pointer rounded-[15px] hover:bg-[#DDD8CB] transition-all duration-200`}
+                    >
+                      Enroll
+                    </button>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+    </>
   );
 };
 
