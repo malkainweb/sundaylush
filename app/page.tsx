@@ -56,7 +56,7 @@ export default function Home() {
       {/* Content */}
       <div className="relative z-10">
         <Navbar />
-        {/* <Hero />*/}
+        <Hero />
         {/* <Courses /> */}
         {/* <MobCourses /> */}
         {/* <UspAnimation /> */}

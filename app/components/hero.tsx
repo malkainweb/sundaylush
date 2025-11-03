@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <>
       <div className="w-full flex flex-col relative ">
-        <div className=" h-screen  sticky top-0 left-0 overflow-clip gap-10 w-full grid  grid-cols-5 px-10 ">
+        <div className=" h-screen flex gap-4 justify-center  sticky top-0 left-0 overflow-clip md:gap-10 w-full md:grid  md:grid-cols-5 px-10 ">
           <div
             style={{
               opacity: secondStartAnime ? 1 : 0.5,
@@ -53,7 +53,10 @@ const Hero = () => {
           {/* Add this new section right after the hero images grid and before the mission/vision section */}
 
           {heroImages.map((img, index) => (
-            <div key={index} className="w-full overflow-x-clip flex relative">
+            <div
+              key={index}
+              className="md:w-full  md:shrink shrink-0 h-fit  w-[40vw] overflow-x-clip flex relative"
+            >
               <Image
                 src={img}
                 alt={`Hero Image ${index + 1}`}
@@ -85,14 +88,14 @@ const Hero = () => {
           ))}
         </div>
 
-        <div className="w-full flex justify-center  items-center h-screen  mt-[-100vh]  mb-[-30vh]  z-10000 ">
-          <div className="flex  flex-col items-center gap-5 max-w-4xl px-8">
+        <div className="w-full flex justify-center  items-center h-screen  mt-[-100vh] mb-[-50vh]  md:mb-[-30vh]  z-10000 ">
+          <div className="flex    flex-col items-center gap-5 md:max-w-4xl px-8">
             {/* Header */}
             <div className="overflow-hidden  ">
               <h1
                 className={`${
                   playfairDisplay.className
-                } text-5xl md:text-6xl capitalize lg:text-7xl font-light text-[#F2E8DE] text-center leading-[120%] transition-all duration-[1.3s] ${
+                } text-4xl md:text-6xl capitalize lg:text-7xl font-medium md:font-light text-[#F2E8DE] text-center leading-[100%] md:leading-[120%] transition-all duration-[1.3s] ${
                   !secondStartAnime ? "translate-y-[200px]" : "translate-y-0"
                 }`}
               >
@@ -107,7 +110,7 @@ const Hero = () => {
               <p
                 className={`${
                   playfairDisplay.className
-                } text-base md:text-lg text-[#F2E8DE] text-center  font-light leading-[120%] w-100 transition-all duration-[1.3s] ${
+                } text-base font-medium md:text-lg text-[#F2E8DE] text-center max-w-full w-[95%] mx-auto  md:font-light leading-[120%] md:w-100 transition-all duration-[1.3s] ${
                   !secondStartAnime ? "-translate-y-[200px]" : "translate-y-0"
                 }`}
               >
@@ -133,12 +136,12 @@ const Hero = () => {
           </div>
         </div>
 
-        <section className="bg-white translate-y-80   md:w-full md:max-w-[98%] mx-auto min-h-[20vh] w-full z-100  rounded-t-[40px] px-8 md:px-16 pb-32 pt-24">
-          <div className="max-w-7xl  mx-auto">
+        <section className="md:bg-white bg-linear-to-b from-white via-white translate-y-80   md:w-full md:max-w-[98%] mx-auto min-h-[20vh] w-full z-100  rounded-t-[40px]  md:px-16 pb-32 pt-24">
+          <div className="max-w-7xl   mx-auto">
             {/* Header */}
-            <div className="mb-20">
+            <div className="md:mb-20 md:border-none border-b border-b-black/30 pb-10 md:pb-0 mb-5 ">
               <h2
-                className={`${playfairDisplay.className} text-4xl md:text-5xl font-extralight text-[#422611] leading-[110%] w-230 max-w-full `}
+                className={`${playfairDisplay.className} text-center md:text-start w-[90%] mx-auto md:mx-0  text-xl md:text-5xl font-extralight text-[#422611] leading-[110%] md:w-230 max-w-full `}
               >
                 At Sunday Lash Company, we{"'"}re raising the standard for lash
                 education by putting real support, clarity, and excellence at
@@ -149,7 +152,7 @@ const Hero = () => {
             {/* Mission and Vision Container */}
             <div className="flex flex-col md:flex-row   items-stretch">
               {/* Left Side - Icon and Label */}
-              <div className="flex flex-col border-t   rounded-tr-2xl  justify-center  items-center  gap-4 md:w-1/4">
+              <div className="hidden flex-col md:border-t  md:flex  rounded-tr-2xl  justify-center  items-center  gap-4 md:w-1/4">
                 <Image
                   src={flower}
                   alt="Flower Icon"
@@ -161,15 +164,15 @@ const Hero = () => {
               {/* <div className="hidden md:block  w-px bg-[#D1C4B8] self-stretch"></div> */}
 
               {/* Right Side - Mission and Vision */}
-              <div className="flex-1 flex  border-t border-l pl-10 relative rounded-tl-2xl pt-6 flex-col md:flex-row gap-12">
-                <div className="flex-1">
+              <div className="flex-1 flex  md:border-t md:border-l md:pl-10 relative rounded-tl-2xl pt-6 flex-col md:flex-row gap-12 md:text-start text-center">
+                <div className="flex-1 md:w-full w-[90%]   mx-auto md:mx-0">
                   <h3
-                    className={`${playfairDisplay.className} text-lg uppercase text-[#422611] mb-4  font-medium`}
+                    className={`${playfairDisplay.className} text-lg uppercase text-[#422611] mb-2 md:mb-4  font-medium`}
                   >
                     OUR MISSION
                   </h3>
                   <p
-                    className={`${HelveticaNeue.className} text-base leading-[130%] text-[#422611] `}
+                    className={`${HelveticaNeue.className} md:font-normal font-light text-sm md:text-base leading-[130%] text-[#422611] `}
                   >
                     To provide calm, confidence-building lash education that
                     empowers artists to grow with clarity, creativity and
@@ -180,14 +183,14 @@ const Hero = () => {
                 </div>
 
                 {/* Our Vision */}
-                <div className="flex-1">
+                <div className="flex-1 md:w-full w-[90%]  mx-auto md:mx-0">
                   <h3
-                    className={`${playfairDisplay.className} text-lg uppercase text-[#422611] mb-4  font-medium`}
+                    className={`${playfairDisplay.className} text-lg uppercase text-[#422611] mb-2 md:mb-4  font-medium`}
                   >
                     OUR VISION
                   </h3>
                   <p
-                    className={`${HelveticaNeue.className} text-base leading-[130%] text-[#422611] `}
+                    className={`${HelveticaNeue.className}  md:font-normal font-light text-sm md:text-base leading-[130%] text-[#422611] `}
                   >
                     We envision an industry led by empowered lash professionals,
                     where artistry is nurtured, not rushed, and growth is always
