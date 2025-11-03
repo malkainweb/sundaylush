@@ -55,13 +55,13 @@ export default function Home() {
 
       {/* Content */}
       <div className="relative z-10">
-        {/* <Navbar />
-        <Hero />*/}
+        <Navbar />
+        {/* <Hero />*/}
         {/* <Courses /> */}
         {/* <MobCourses /> */}
         {/* <UspAnimation /> */}
         <BeautyProcess />
-        {/*    <StackedGallery /> */}
+        <StackedGallery />
         <FAQ />
         {/*   <Footer /> */}
       </div>

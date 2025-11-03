@@ -62,8 +62,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-240 shadow-md left-[50%] translate-x-[-50%] max-w-[90%] mx-auto fixed transition-all duration-500 rounded-[18px] z-[99999] bg-[#EEE7D7] p-1.5 ${
-        isVisible ? "top-5" : "-top-24"
+      className={`w-240 shadow-md left-[50%] translate-x-[-50%] md:max-w-[90%] w-[94%] mx-auto fixed transition-all duration-500 rounded-[18px] z-99999 bg-[#EEE7D7] p-1.5 ${
+        isVisible ? "md:top-5 top-[1.5%]" : "-top-24"
       }`}
     >
       <div className="w-full mx-auto flex items-center justify-between">
@@ -72,7 +72,7 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div
-          className={`flex absolute left-[50%] translate-x-[-50%]  items-center gap-8 ${playfairDisplay.className}`}
+          className={`hidden absolute md:flex  left-[50%] translate-x-[-50%]  items-center gap-8 ${playfairDisplay.className}`}
         >
           {navLinks.map((link) => (
             <a
