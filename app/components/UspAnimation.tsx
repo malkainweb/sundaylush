@@ -5,8 +5,10 @@ import MainUsp from "@/public/browse/mainusp.webp";
 import Usp1 from "@/public/browse/usp_one.webp";
 import Usp2 from "@/public/browse/usp_two.webp";
 import Usp3 from "@/public/browse/usp_three.webp";
+import mobUsp from "@/public/browse/mob.webp";
 import sticks from "@/public/browse/sticks.webp";
 import Image from "next/image";
+
 import { playfairDisplay } from "../util/font";
 import { useDeviceType } from "../util/useDeviceType";
 
@@ -75,7 +77,7 @@ const UspAnimation = () => {
       <div className=" w-full pt-10 px-[3%]  md:hidden">
         <div className="w-full flex items-end p-3 overflow-hidden relative rounded-3xl ">
           <Image
-            src={MainUsp}
+            src={mobUsp}
             alt={`USP Image Main`}
             className="w-full h-full absolute scale-110 top-0 left-0 object-cover "
           />

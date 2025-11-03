@@ -141,7 +141,7 @@ const Hero = () => {
             {/* Header */}
             <div className="md:mb-20 md:border-none border-b border-b-black/30 pb-10 md:pb-0 mb-5 ">
               <h2
-                className={`${playfairDisplay.className} text-center md:text-start w-[90%] mx-auto md:mx-0  text-xl md:text-5xl font-extralight text-[#422611] leading-[110%] md:w-230 max-w-full `}
+                className={`${playfairDisplay.className} text-center md:text-start w-[80%] mx-auto md:mx-0  text-xl md:text-5xl font-extralight text-[#422611] leading-[110%] md:w-230 max-w-full `}
               >
                 At Sunday Lash Company, we{"'"}re raising the standard for lash
                 education by putting real support, clarity, and excellence at
