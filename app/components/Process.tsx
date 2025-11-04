@@ -103,6 +103,7 @@ export default function BeautyProcess() {
   return (
     <div
       ref={containerRef}
+      id="process"
       className=" overflow-clip bg-linear-to-b md:py-0 pt-15 pb-20 to-[#F2EEE5] mx-auto md:w-800 max-w-full md:h-[400vh] w-full"
     >
       <div className="md:h-screen flex flex-col md:sticky top-0 left-0 w-full">

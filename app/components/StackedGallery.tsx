@@ -174,6 +174,7 @@ export default function StackedGallery() {
   return (
     <section
       ref={containerRef}
+      id="gallery"
       className="relative w-full md:w-800 max-w-full mx-auto bg-linear-to-b  via-[#F2EEE5] from-[#F2EEE5] md:bg-[#F2EEE5] md:h-[300vh]"
     >
       {/* Sticky Container */}

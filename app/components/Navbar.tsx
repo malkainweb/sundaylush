@@ -4,7 +4,7 @@ import logo from "@/public/nav/logo.svg";
 import Image from "next/image";
 
 const navLinks = [
-  { href: "#about", label: "About" },
+  // { href: "#about", label: "About" },
   { href: "#courses", label: "Courses" },
   { href: "#process", label: "Process" },
   { href: "#gallery", label: "Gallery" },
@@ -60,6 +60,24 @@ export default function Navbar() {
     };
   }, []);
 
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const targetPosition = targetElement.offsetTop - 100; // 100px offset for navbar
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <nav
       className={`w-240 shadow-md left-[50%] translate-x-[-50%] md:max-w-[90%] w-[94%] mx-auto fixed transition-all duration-500 rounded-[18px] z-99999 bg-[#EEE7D7] p-1.5 ${
@@ -78,7 +96,8 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className=" hover:underline underline-offset-4 text-[#502004] capitalize text-base font-normal hover:text-[#4A4A4A] transition-colors"
+              onClick={(e) => handleNavClick(e, link.href)}
+              className=" hover:underline underline-offset-4 text-[#502004] capitalize text-base font-normal hover:text-[#4A4A4A] transition-colors cursor-pointer"
             >
               {link.label}
             </a>
