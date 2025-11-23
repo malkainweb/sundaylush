@@ -131,9 +131,18 @@ const Hero = () => {
             </div>
 
             {/* Button */}
-
             <div className=" overflow-hidden">
               <button
+                onClick={() => {
+                  const coursesSection = document.getElementById("courses");
+                  if (coursesSection) {
+                    const targetPosition = coursesSection.offsetTop;
+                    window.scrollTo({
+                      top: targetPosition,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
                 className={`${
                   HelveticaNeue.className
                 } px-12 py-4 bg-[#FF583B] cursor-pointer text-[white] text-base font-normal rounded-[14px] hover:bg-[#ff9c8b] transition-all duration-[1.3s] pointer-events-auto ${

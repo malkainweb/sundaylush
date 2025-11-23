@@ -110,7 +110,7 @@ export default function Navbar() {
           onClick={() => {
             const coursesSection = document.getElementById("courses");
             if (coursesSection) {
-              const targetPosition = coursesSection.offsetTop + 100; // 100px offset for navbar
+              const targetPosition = coursesSection.offsetTop; // 100px offset for navbar
               window.scrollTo({
                 top: targetPosition,
                 behavior: "smooth",
