@@ -14,6 +14,7 @@ const courses = [
     duration: "3 Days",
     description:
       "A foundational course for beginners or rebuilding artists. Covers theory, safety, mapping, classic application, and hands-on model work. ",
+    paymentLink: "https://square.link/u/UexAPOHA",
   },
   {
     image: img2,
@@ -21,6 +22,7 @@ const courses = [
     duration: "2 Days",
     description:
       "Advanced training for certified lashed artist. Focuses on fan creation, density control, mega styling, retention, and lash health. ",
+    paymentLink: "https://square.link/u/mKSCVvtx",
   },
   {
     image: img3,
@@ -28,6 +30,7 @@ const courses = [
     duration: "1 Day",
     description:
       "For intermediate to advanced artists. Topic include, wispy sets, hybrid blending, textured styling, client customization.",
+    paymentLink: "https://square.link/u/wIIIKWVSX",
   },
 ];
 export default function Courses() {
