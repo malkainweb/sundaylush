@@ -6,6 +6,7 @@ import img1 from "@/public/courseStep/img1.webp";
 import img2 from "@/public/courseStep/img2.webp";
 import img3 from "@/public/courseStep/img3.webp";
 import Image from "next/image";
+import Link from "next/link";
 
 const courses = [
   {
@@ -95,11 +96,15 @@ export default function Courses() {
                   </p>
 
                   {/* CTA Button */}
-                  <button
-                    className={`${playfairDisplay.className} md:w-[92%] w-[96%] mx-auto py-3.5 md:py-3 mt-4 bg-[#EEE7D7] text-[#2C2C2C] text-sm font-normal cursor-pointer rounded-[15px] md:rounded-[20px] hover:bg-[#DDD8CB] transition-all duration-200`}
+                  {/* CTA Button */}
+                  <Link
+                    href={course.paymentLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${playfairDisplay.className} md:w-[92%] w-[96%] mx-auto py-3.5 md:py-3 mt-4 bg-[#EEE7D7] text-[#2C2C2C] text-sm font-normal cursor-pointer rounded-[15px] md:rounded-[20px] hover:bg-[#DDD8CB] transition-all duration-200 block text-center`}
                   >
                     Enroll
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

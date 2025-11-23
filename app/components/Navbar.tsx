@@ -105,8 +105,19 @@ export default function Navbar() {
         </div>
 
         {/* CTA Button */}
+        {/* CTA Button */}
         <button
-          className={`${HelveticaNeue.className} px-6 py-3 bg-[#FF583B] text-white text-base font-normal rounded-[14.25px] hover:bg-[#FF5536] transition-all hover:shadow-lg`}
+          onClick={() => {
+            const coursesSection = document.getElementById("courses");
+            if (coursesSection) {
+              const targetPosition = coursesSection.offsetTop + 100; // 100px offset for navbar
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              });
+            }
+          }}
+          className={`${HelveticaNeue.className} px-6 py-3 bg-[#FF583B] text-white text-base font-normal rounded-[14.25px] hover:bg-[#FF5536] transition-all hover:shadow-lg cursor-pointer`}
         >
           Get Started
         </button>

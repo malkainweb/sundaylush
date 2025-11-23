@@ -116,28 +116,40 @@ export default function Footer() {
           </div>
 
           {/* Right Column - Schedule Meeting */}
-          <div className="w-full   order-1 px-[3.2%] md:w-110 md:max-w-[60%] border-b-white/30 border-b md:border-none md:pb-0 pb-8">
+          {/* Right Column - Get Started */}
+          {/* Right Column - Get Started */}
+          <div className="w-full order-1 px-[3.2%] md:w-110 md:max-w-[60%] border-b-white/30 border-b md:border-none md:pb-0 pb-8">
             <div
-              className={`${playfairDisplay.className} bg-[#FBB824]/50 backdrop-blur-md md:rounded-[30px] rounded-[23px] md:p-7 p-6  flex flex-col md:gap-6 gap-5 text-[#FDFBEE]`}
+              className={`${playfairDisplay.className} bg-[#FBB824]/50 backdrop-blur-md md:rounded-[30px] rounded-[23px] md:p-7 p-6 flex flex-col md:gap-6 gap-5 text-[#FDFBEE]`}
             >
               <h2 className="text-3xl md:text-4xl font-light tracking-wide">
-                SCHEDULE A<br />
-                MEETING
+                READY TO
+                <br />
+                GET STARTED?
               </h2>
 
               <p
-                className={`${HelveticaNeue.className} md:text-base text-sm leading-[130%] `}
+                className={`${HelveticaNeue.className} md:text-base text-sm leading-[130%]`}
               >
-                Ready to take the next step? Whether you're curious about our
-                courses, need guidance on which program is right for you, or
-                want to explore how our skills can fit into your beauty
-                journey—we're here to help.
+                Begin your lash journey today. Browse our courses, choose the
+                path that's right for you, and take the first step toward
+                building your dream career in lash artistry.
               </p>
 
               <button
-                className={`${playfairDisplay.className} w-full  px-12 py-4 bg-[#FFF7E7]  text-[#502004] rounded-full text-base font-medium hover:bg-white transition-all hover:shadow-lg`}
+                onClick={() => {
+                  const coursesSection = document.getElementById("courses");
+                  if (coursesSection) {
+                    const targetPosition = coursesSection.offsetTop + 100; // 100px offset for navbar
+                    window.scrollTo({
+                      top: targetPosition,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
+                className={`${playfairDisplay.className} w-full px-12 py-4 bg-[#FFF7E7] text-[#502004] rounded-full text-base font-medium hover:bg-white transition-all hover:shadow-lg cursor-pointer`}
               >
-                Book an appointment
+                Get Started
               </button>
             </div>
           </div>

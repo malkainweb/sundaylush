@@ -6,6 +6,7 @@ import sec3 from "@/public/hero/sec3.webp";
 import sec4 from "@/public/hero/sec4.webp";
 import sec5 from "@/public/hero/sec5.webp";
 import flower from "@/public/hero/flower.svg";
+import logo from "@/public/nav/logo.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { HelveticaNeue, playfairDisplay } from "../util/font";
@@ -92,6 +93,15 @@ const Hero = () => {
           <div className="flex    flex-col items-center gap-5 md:max-w-4xl px-8">
             {/* Header */}
             <div className="overflow-hidden  ">
+              <Image
+                src={logo}
+                alt="Logo"
+                className={`w-[10rem] mx-auto h-auto mb-3 transition-all duration-[1s] ${
+                  !secondStartAnime
+                    ? "translate-y-[-200px] opacity-0"
+                    : "translate-y-0"
+                }`}
+              />
               <h1
                 className={`${
                   playfairDisplay.className
