@@ -37,12 +37,12 @@ export default function Footer() {
         <div className="flex  md:flex-row  flex-col justify-between items-center md:px-[3.2%] md:pt-14  gap-8  md:gap-16 w-full mx-auto">
           {/* Left Column - Reach Out */}
           <div className={`${playfairDisplay.className}  order-2 md:order-1 `}>
-            <h2 className="text-2xl md:text-4xl font-light md:mb-8 mb-6 tracking-wide">
+            {/* <h2 className="text-2xl md:text-4xl font-light md:mb-8 mb-6 tracking-wide">
               REACH OUT TO US
-            </h2>
+            </h2> */}
 
             {/* Social Icons */}
-            <div className="flex gap-4  mb-8">
+            {/* <div className="flex gap-4  mb-8">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full border border-white/40 flex items-center justify-center hover:bg-white/10 text-[#FDFBEE] transition-colors"
@@ -64,7 +64,7 @@ export default function Footer() {
               >
                 <FaInstagram className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
 
             {/* Contact Information */}
             <div
