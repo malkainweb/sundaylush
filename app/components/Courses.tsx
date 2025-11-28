@@ -31,7 +31,7 @@ const courses = [
     duration: "1 Day",
     description:
       "For intermediate to advanced artists. Topic include, wispy sets, hybrid blending, textured styling, client customization.",
-    paymentLink: "https://square.link/u/wIIIKWVSX",
+    paymentLink: "https://square.link/u/wlIIKWSX",
   },
 ];
 export default function Courses() {
