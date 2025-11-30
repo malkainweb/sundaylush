@@ -79,11 +79,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="tel:+12225657236"
+                href="tel:+732-320-9811"
                 className="flex items-center gap-3 text-white/90 hover:text-white transition-colors group"
               >
                 <BsTelephone className="w-5 h-5 shrink-0" />
-                <span className="">(222) 567 7236</span>
+                <span className="">(732) -320-9811</span>
               </a>
 
               <a
