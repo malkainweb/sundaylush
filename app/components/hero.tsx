@@ -41,7 +41,7 @@ const Hero = () => {
               opacity: secondStartAnime ? 1 : 0.5,
               transition: "opacity 1.3s ease-in-out",
             }}
-            className="bg-linear-to-b pointer-events-none  to-[#A8603A] absolute h-[75%] left-0 w-full bottom-0 z-100"
+            className="bg-linear-to-b pointer-events-none via-[#A8603A]/80  to-[#A8603A] absolute h-[75%] left-0 w-full bottom-0 z-100"
           ></div>
 
           <div
@@ -49,7 +49,7 @@ const Hero = () => {
               opacity: secondStartAnime ? 1 : 0.5,
               transition: "opacity 1.3s ease-in-out",
             }}
-            className="bg-linear-to-t   pointer-events-none  to-[#A8603A] absolute h-[75%] left-0 w-full top-0 z-100"
+            className="bg-linear-to-t   pointer-events-none via-[#A8603A]/80 to-[#A8603A] absolute h-[75%] left-0 w-full top-0 z-100"
           ></div>
           {/* Add this new section right after the hero images grid and before the mission/vision section */}
 
