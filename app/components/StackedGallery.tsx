@@ -218,7 +218,7 @@ export default function StackedGallery() {
         </motion.div>
       </div>
 
-      <div className="flex  w-full justify-center py-10 items-center gap-4">
+      <div className="flex  md:hidden w-full justify-center py-10 items-center gap-4">
         {/* Previous Button */}
         <button
           onClick={handlePrev}
