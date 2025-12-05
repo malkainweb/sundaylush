@@ -96,7 +96,7 @@ const Hero = () => {
               <Image
                 src={logo}
                 alt="Logo"
-                className={`w-[10rem] mx-auto h-auto mb-3 transition-all duration-[1s] ${
+                className={`w-[8rem] mx-auto h-auto mb-3 transition-all duration-[1s] ${
                   !secondStartAnime
                     ? "translate-y-[-200px] opacity-0"
                     : "translate-y-0"
