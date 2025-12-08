@@ -4,9 +4,9 @@ import "./globals.css";
 import LenisProvider from "./util/LenisProvider";
 
 export const metadata: Metadata = {
-  title: "Sunday Lush | Professional Lash Extension Certification & Training",
+  title: "Sunday Lash | Professional Lash Extension Certification & Training",
   description:
-    "Master the art of lash extensions with Sunday Lush's comprehensive certification courses. Learn classic lash techniques, advanced methods, and build your beauty business with expert-led training designed for all skill levels.",
+    "Master the art of lash extensions with Sunday Lash's comprehensive certification courses. Learn classic lash techniques, advanced methods, and build your beauty business with expert-led training designed for all skill levels.",
   keywords: [
     "lash extension courses",
     "lash certification",
@@ -19,25 +19,25 @@ export const metadata: Metadata = {
     "professional lash education",
     "lash business training",
   ],
-  authors: [{ name: "Sunday Lush Co" }],
-  creator: "Sunday Lush Co",
-  publisher: "Sunday Lush Co",
-  metadataBase: new URL("https://sundaylush-mvgb.vercel.app/"), // Replace with your actual domain
+  authors: [{ name: "Sunday Lash Co" }],
+  creator: "Sunday Lash Co",
+  publisher: "Sunday Lash Co",
+  metadataBase: new URL("https://www.sundaylashcompany.com"), // Replace with your actual domain
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Sunday Lush | Professional Lash Extension Certification & Training",
+    title: "Sunday Lash | Professional Lash Extension Certification & Training",
     description:
       "Transform your passion into a career. Learn professional lash extension techniques through step-by-step training that makes mastery simple, fun, and achievable.",
-    url: "https://sundaylush-mvgb.vercel.app/", // Replace with your actual domain
-    siteName: "Sunday Lush",
+    url: "https://www.sundaylashcompany.com", // Replace with your actual domain
+    siteName: "Sunday Lash",
     images: [
       {
         url: "/gallery/im7.webp", // This will be resolved relative to metadataBase
         width: 1200,
         height: 630,
-        alt: "Sunday Lush - Professional Lash Extension Training",
+        alt: "Sunday Lash - Professional Lash Extension Training",
       },
     ],
     locale: "en_US",
@@ -45,11 +45,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sunday Lush | Professional Lash Extension Certification",
+    title: "Sunday Lash | Professional Lash Extension Certification",
     description:
       "Master lash extensions with expert-led courses. Build your beauty business with confidence and clarity.",
     images: ["/gallery/im7.webp"],
-    creator: "@sundaylush", // Replace with your actual Twitter handle
+    creator: "@sundayLash", // Replace with your actual Twitter handle
   },
   robots: {
     index: true,
